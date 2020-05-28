@@ -24,4 +24,24 @@ class WeekdayTest extends TestCase
             [6, "土"]
         ]; 
     }
+
+    /**
+     * @dataProvider invalidInputProvider
+     */
+    public function testCanReturnInvalidException(int $input): void
+    {
+        $this->expectException(\InvalidArgumentException::class);
+        Weekday::getJapaneseWeekday($input); 
+    }
+
+    public function invalidInputProvider()
+    {
+        return [
+            [-1],
+            [7],
+            [100],
+            [-256],
+            [-257],
+        ];
+    }
 }
