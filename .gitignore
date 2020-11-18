@@ -10,3 +10,6 @@ composer.phar
 # composer.lock
 
 # End of https://www.gitignore.io/api/composer
+
+.idea
+example.db
