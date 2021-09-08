@@ -16,3 +16,14 @@ function Sum()
 Sum();
 assert($a === 1);
 assert($b === 3);
+
+function Sum2()
+{
+    $GLOBALS['b'] = $GLOBALS['a'] + $GLOBALS['b'];
+}
+
+$a = 1;
+$b = 2;
+Sum2();
+assert($a === 1);
+assert($b === 3);
