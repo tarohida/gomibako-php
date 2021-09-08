@@ -1,4 +1,6 @@
 <?php
+namespace Tests\TDDPractice;
+
 use PHPUnit\Framework\TestCase;
 use tarohida\TDDPractice\Sample;
 

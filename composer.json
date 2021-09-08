@@ -15,11 +15,11 @@
     "require-dev": {
         "phpunit/phpunit": "^9.5"
     },
-      "autoload": {
-          "psr-4": {
-              "tarohida\\": "src/"
-          }
-      },
+    "autoload": {
+        "psr-4": {
+            "tarohida\\": "src/"
+        }
+    },
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
